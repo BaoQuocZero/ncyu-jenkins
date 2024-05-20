@@ -15,21 +15,21 @@ public class GradeConverterTest {
 
   @Test
   public void testConvert1() {
-    String expected = "A";
+    String expected = "E";
     String actual = converter.convert(50);
     assertEquals(expected, actual);
   }
 
   @Test
   public void testConvert2() {
-    String expected = "A";
-    String actual = converter.convert(101);
+    String expected = "C";
+    String actual = converter.convert(75);
     assertEquals(expected, actual);
   }
 
   @Test
   public void testConvert3() {
-    String expected = "A";
+    String expected = "Invalid";
     String actual = converter.convert(-10);
     assertEquals(expected, actual);
   }
